@@ -24,10 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <div>
         <div>
           <Link style={{ display: "block" }} href="/swap">
             swap
@@ -37,7 +34,6 @@ export default function RootLayout({
           </Link>
         </div>
         {children}
-      </body>
-    </html>
+    </div>
   );
 }
